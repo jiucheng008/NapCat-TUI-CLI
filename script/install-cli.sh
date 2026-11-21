@@ -41,7 +41,7 @@ function network_test() {
 
     # Define Github proxy array and check URL
     local proxy_arr=("https://github.sbhfy.cn")
-    local check_url="https://raw.githubusercontent.com/NapNeko/NapCat-TUI-CLI/main/LICENSE" # Updated check URL
+    local check_url="https://raw.githubusercontent.com/jiucheng008/NapCat-TUI-CLI/main/LICENSE" # Updated check URL
 
     # Check if a specific proxy number is requested and valid
     if [[ "${proxy_num_arg}" =~ ^[1-9][0-9]*$ ]] && [ "${proxy_num_arg}" -le ${#proxy_arr[@]} ]; then
@@ -180,7 +180,7 @@ function install_cli_components() {
 
     # 3. Define files, URLs, and targets    
     # Updated base_url
-    local base_url="https://raw.githubusercontent.com/NapNeko/NapCat-TUI-CLI/main/script/tui-cli"
+    local base_url="https://raw.githubusercontent.com/jiucheng008/NapCat-TUI-CLI/main/script/tui-cli"
     local target_dir="/usr/local/bin"
     local files_to_download=("napcat" "_napcat_Boot" "_napcat_Config" "_napcat_old")
     local download_failed=false
